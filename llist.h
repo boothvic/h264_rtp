@@ -1,10 +1,9 @@
 #ifndef _LLIST_H
 #define _LLIST_H
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
 /*
  * 删除客户端节点的send失败次数阀值,
  * 避免客户端浏览器非正常退出后还一直send();
@@ -23,8 +22,8 @@ struct node {
     int send_fail_n;        /* 记录了send失败次数 */
     struct node *next;
 };
-typedef struct node *pnode;
-typedef struct node *linklist;
+typedef struct node* pnode;
+typedef struct node* linklist;
 
 linklist create_null_list_link(void);
 int is_nulllist_link(linklist llist);

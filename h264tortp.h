@@ -1,9 +1,6 @@
 #ifndef _H264TORTP_H
 #define _H264TORTP_H
 
-#include <stdio.h>
-#include <stdint.h>
-#include <string.h>
 #include "llist.h"
 
 #define NAL_MAX     4000000
