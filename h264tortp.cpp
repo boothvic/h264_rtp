@@ -352,9 +352,9 @@ static int h264nal2rtp_send(int framerate, uint8_t *pstStream, int nalu_len, lin
 static int copy_nal_from_file(FILE *fp, uint8_t *buf, int *len);
 static int copy_nal_from_file(FILE *fp, uint8_t *buf, int *len)
 {
-    char tmpbuf[4];     /* i have forgotten what this var mean */
-    char tmpbuf2[1];    /* i have forgotten what this var mean */
-    int flag = 0;       /* i have forgotten what this var mean */
+    char tmpbuf[4];
+    char tmpbuf2[1];
+    int flag = 0;
     int ret;
 
 #if 0
